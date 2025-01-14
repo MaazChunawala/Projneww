@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>My Webpage</h1>
+    </div>
+
+    <div class="container">
+        <div class="left-menu" id="leftMenu">
+            <button onclick="toggleMenu()">Toggle Menu</button>
+            <ul id="userList">
+                <!-- Dynamically filled with user list -->
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2>Welcome to the Chat Application</h2>
+            <p>Select a user from the left menu to start chatting.</p>
+        </div>
+
+        <div class="right-panel">
+            <h3>Chat Room</h3>
+            <div id="chatbox">
+                <!-- Chat messages will appear here -->
+            </div>
+            <input type="text" id="message" placeholder="Type your message">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Footer content</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
